@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className={`${showMenu ? 'fixed w-full' : 'h-0 w-0'} md:hidden right-0 top-0 bottom-0 overflow-hidden z-20 bg-white transition-all`}>
           <div className='flex items-center  justify-between px-5 py-6'>
             <img src={assets.logo}  className='w-36'/>
-            <i class="fa-solid fa-circle-xmark w-10 flex items-center jus  rounded-full"></i>
+            <i onClick={() => setShowMenu(false)} className="fa-solid fa-circle-xmark w-10 flex items-center jus  rounded-full"></i>
             </div>
             <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium text-green-800 '>
               <NavLink   onClick={()=>setShowMenu(false)} to='/'><p className='px-4 py-2  rounded inline-block'>HOME</p></NavLink>
